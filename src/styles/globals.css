@@ -1,0 +1,114 @@
+/* Global styles for the Mosoly Dental chat application */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f5f6fa;
+  color: #333;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Container for the entire chat card */
+.chat-wrapper {
+  max-width: 600px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+/* Header styling */
+.chat-header {
+  background-color: #0070f3;
+  color: white;
+  padding: 1rem 1.5rem;
+}
+
+.chat-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.chat-header p {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Message area styling */
+.message-area {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #f9fafb;
+}
+
+.message {
+  margin-bottom: 0.75rem;
+  max-width: 70%;
+  padding: 0.6rem 0.8rem;
+  border-radius: 10px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+/* User messages align right */
+.message.user {
+  margin-left: auto;
+  background-color: #0070f3;
+  color: #ffffff;
+  border-bottom-right-radius: 0;
+}
+
+/* Reception messages align left */
+.message.reception {
+  margin-right: auto;
+  background-color: #e5e7eb;
+  color: #333;
+  border-bottom-left-radius: 0;
+}
+
+/* Input area styling */
+.input-area {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-top: 1px solid #e5e7eb;
+  background-color: #fff;
+}
+
+.input-area textarea {
+  flex: 1;
+  resize: none;
+  border: 1px solid #ccd0d5;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  min-height: 40px;
+}
+
+.input-area button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #0070f3;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.input-area button:hover {
+  background-color: #0059c1;
+}
