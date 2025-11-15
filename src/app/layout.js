@@ -1,20 +1,14 @@
-import '../styles/globals.css';
+import './globals.css';
 
 export const metadata = {
-  title: 'Mosoly Dental Chat',
-  description: 'Professzionális fogorvosi recepciós chat felület',
+  title: 'Mosoly Dental Backend',
+  description: 'API routes for Mosoly Dental digital receptionist'
 };
 
-/**
- * Root layout component.
- * This defines the HTML structure and wraps all pages in consistent styling.
- */
 export default function RootLayout({ children }) {
   return (
     <html lang="hu">
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
