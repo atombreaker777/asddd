@@ -1,15 +1,16 @@
 {
-  "name": "mosoly-dental-chat",
+  "name": "mosoly-dental-backend",
   "version": "1.0.0",
-  "private": true,
+  "description": "Backend for Mosoly Dental digital receptionist using Next.js API routes.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "next": "14.0.4",
+    "next": "13.5.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "googleapis": "^131.0.0"
   }
 }
